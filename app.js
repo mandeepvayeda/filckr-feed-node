@@ -2,10 +2,11 @@ const http = require('http');
 const https = require('https');
 const express = require('express')
 const fs = require('fs');
+var port = Number(process.env.PORT|| 5000);
 
 const app = express()
 
-app.listen(3000);
+app.listen(port);
 
 app.set('view engine', 'ejs');
 
